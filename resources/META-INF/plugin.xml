@@ -1,0 +1,50 @@
+<idea-plugin>
+  <id>com.jiajun.flutter_add_image</id>
+  <name>flutter_add_image</name>
+  <version>1.7</version>
+  <vendor email="515671843@qq.com" url="jiajun.com">zhoujiajun.com</vendor>
+
+  <description><![CDATA[
+      How to use: right click in the folder --> new -->FlutterAddImage
+      The first run will generate A files (similar to Android's R file)
+     add a new 3x image,auto gen x 2x .
+     Don't forget to add your folder at pubspec.yaml
+     <br>
+     使用方法:在文件夹右键 --> new -->FlutterAddImage
+     添加一个3倍的图片,自动生成 1倍 2倍的
+     第一次运行会生成A文件(类似android的R文件).
+     别忘了在pubspec.yaml添加你的文件夹
+     <br>
+      <em>add a new 3x image,auto gen x 2x </em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Support for flutter.<br>
+
+      <em>frame can always on top </em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+
+  -->
+  <depends>com.intellij.modules.lang</depends>
+  <depends>com.intellij.modules.java</depends>
+  <extensions defaultExtensionNs="com.intellij">
+
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="FlutterAddImage.add" class="com.june.FlutterAddImage" text="FlutterAddImage" description="add image">
+      <add-to-group group-id="NewGroup" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
